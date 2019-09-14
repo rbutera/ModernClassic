@@ -1,0 +1,83 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Script file="PortraitFrame.lua"/>
+
+    <Frame name="TomCatsNineSlicePanelTemplate" mixin="TomCatsNineSlicePanelMixin" frameLevel="500" setAllPoints="true" virtual="true">
+        <Scripts>
+            <OnLoad method="OnLoad"/>
+        </Scripts>
+    </Frame>
+
+    <Frame name="TomCatsPortraitFrameTemplateNoCloseButton" mixin="TomCatsPortraitFrameMixin" virtual="true">
+        <KeyValues>
+            <KeyValue key="layoutType" value="PortraitFrameTemplate" type="string"/>
+        </KeyValues>
+        <Size x="338" y="424"/>
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="-6">
+                <Texture name="$parentBg" file="Interface\FrameGeneral\UI-Background-Rock" horizTile="true" vertTile="true" parentKey="Bg">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="2" y="-21"/>
+                        <Anchor point="BOTTOMRIGHT" x="-2" y="2"/>
+                    </Anchors>
+                </Texture>
+                <Texture parentKey="TitleBg" inherits="_UI-Frame-TitleTileBg">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="2" y="-3"/>
+                        <Anchor point="TOPRIGHT" x="-25" y="-3"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="OVERLAY" textureSubLevel="-1">
+                <Texture name="$parentPortrait" parentKey="portrait">
+                    <Size x="61" y="61"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-6" y="8" />
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="OVERLAY">
+                <FontString name="$parentTitleText" inherits="GameFontNormal" text="" parentKey="TitleText" wordwrap="false">
+                    <Anchors>
+                        <Anchor point="TOP" x="0" y="-5"/>
+                        <Anchor point="LEFT" x="60"/>
+                        <Anchor point="RIGHT" x="-60"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+            <Layer level="BORDER">
+                <Texture parentKey="TopTileStreaks" inherits="_UI-Frame-TopTileStreaks">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="0" y="-21"/>
+                        <Anchor point="TOPRIGHT" x="-2" y="-21"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Frames>
+            <Frame parentKey="NineSlice" inherits="TomCatsNineSlicePanelTemplate"/>
+        </Frames>
+    </Frame>
+
+    <Frame name="TomCatsPortraitFrameTemplate" inherits="TomCatsPortraitFrameTemplateNoCloseButton" virtual="true">
+        <Frames>
+            <Button name="$parentCloseButton" parentKey="CloseButton" inherits="UIPanelCloseButton">
+                <Anchors>
+                    <Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" x="5.6" y="5"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick>
+                        HideParentPanel(self:GetParent())
+                    </OnClick>
+                </Scripts>
+            </Button>
+        </Frames>
+    </Frame>
+
+    <Frame name="TomCatsPortraitFrameTemplateMinimizable" inherits="TomCatsPortraitFrameTemplate" virtual="true">
+        <KeyValues>
+            <KeyValue key="layoutType" value="PortraitFrameTemplateMinimizable" type="string"/>
+        </KeyValues>
+    </Frame>
+
+</Ui>

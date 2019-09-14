@@ -1,0 +1,7 @@
+<Ui>
+	<Script file="Core\Init.lua"/>
+	<Script file="Core\InitConfig.lua"/>
+	<Include file="Libraries\Libraries.xml"/>
+	<Script file="Local\Local.lua"/>
+	<Include file="Modules\Modules.xml"/>
+</Ui>

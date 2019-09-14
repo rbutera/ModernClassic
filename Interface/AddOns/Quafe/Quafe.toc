@@ -1,0 +1,15 @@
+## Interface: 11302
+## Version: 8.2.0.44
+## Author: Voidiver
+## Title: Quafe
+## Notes: Quafe
+## Notes-zhCN: Quafe
+
+## SavedVariables: Quafe_DB
+## SavedVariablesPerCharacter: Quafe_DBP
+## X-oUF: oUF_Quafe
+
+## OptionalDeps: Quafe_LFC, Details, Skada, MeetingStone, WIM
+
+Quafe.xml
+Quafe.lua

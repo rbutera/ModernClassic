@@ -1,0 +1,23 @@
+
+Tale_Options = {
+	["battlegroundEnding"] = false,
+	["pvpKillsLog"] = true,
+	["killsLog"] = true,
+	["levelUpLog"] = true,
+	["questTurnInLog"] = true,
+	["bosskills"] = true,
+	["logInterval"] = 10,
+	["resizeChat"] = false,
+	["reputationChange"] = true,
+	["pvpKills"] = true,
+	["bosskillsLog"] = true,
+	["levelUp"] = true,
+	["bosskillsFirstkill"] = false,
+	["deathLog"] = true,
+	["version"] = 1,
+	["death"] = true,
+	["levelUpShowPlayed"] = true,
+	["reputationChangeOnlyExalted"] = false,
+	["battlegroundEndingOnlyWins"] = false,
+	["battlegroundEndingLog"] = true,
+}

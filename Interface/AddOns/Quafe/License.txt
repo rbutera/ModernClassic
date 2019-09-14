@@ -1,0 +1,13 @@
+﻿License
+
+Copyright (c) 2019 voidiver@outlook.com
+
+1.此插件，包括任何修改、衍生版本必须免费分享，不得以任何形式收取费用，包括但不限于调试费，入群费，礼物等。
+2.此插件部分图片、字体、音频来自于互联网，部分元素、设计来自于多款游戏，在某些用途中可能造成侵权。因使用、分享等行为造成的侵权，由使用者自行承担。
+3.请不要删除插件作者名称。不要公开分享、发布此插件的修改、衍生版本。
+4.此说明应包含在所有本插件副本或者实质部分中。
+
+This addon contains third-party resources from internet. Don't use it in business.
+Do not modify the author and name of this addon.
+Do not upload, share or redistribute copies of this addon.
+Do not redistribute TGA files included in this addon.

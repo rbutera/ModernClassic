@@ -1,0 +1,16 @@
+## Interface: 80100
+## Name: Masque_SpikyStone
+## Title: Masque: |cff7284abSpiky Stone|r
+## Version: 1.0
+## Author: Daniel Troko, Lars "Goldpaw" Norberg
+## Notes: A spiky stone themed Masque skin.|n|nDesign by Daniel Troconis.|nCode by Lars Norberg.|n|n|cff4488ffPayPal|r|cffffffff:|r |n|cffffffffazerite@cogwerkz.org|r|n|n|cff4488ffPatreon|r|cffffffff:|r |n|cffffffffwww.patreon.com/AzeriteUI|r
+## DefaultState: Enabled
+## Dependencies: Masque
+## X-Discord: https://discord.gg/MUSfWXd
+## X-Twitter: https://twitter.com/azeriteui
+## X-Donate: https://www.paypal.me/azeriteui
+## X-Website: https://www.patreon.com/azeriteui
+## X-License: All Rights Reserved
+## X-Category: Artwork
+
+main.lua

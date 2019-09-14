@@ -1,0 +1,118 @@
+lightweight tag 5d1f7b642d0b312832693973c8d2e7c32b655cfc 1.0.0
+Author:	Domenik Irrgang <domenikirrgang@gmail.com>
+Date:	Sun Aug 25 17:55:40 2019 +0200
+
+commit 5d1f7b642d0b312832693973c8d2e7c32b655cfc
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Sun Aug 25 17:55:40 2019 +0200
+
+    implemented isse #73
+
+commit d5c83613141ea9913841401bdb4fae1750122732
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Sun Aug 25 17:23:25 2019 +0200
+
+    removed invite keyword setting
+
+commit 10fad93d5c33d05edb577373cd5f674d0e3420ad
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Sun Aug 25 17:20:48 2019 +0200
+
+    fixed french import
+
+commit 51af3a7ac1de9595fa7890d7630dd8b8098aba90
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Sun Aug 25 17:19:30 2019 +0200
+
+    implemented issue #69 #70 #71
+
+commit 51af3a7ac1de9595fa7890d7630dd8b8098aba90
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Sun Aug 25 17:19:30 2019 +0200
+
+    implemented issue #69 #70 #71
+
+commit 51af3a7ac1de9595fa7890d7630dd8b8098aba90
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Sun Aug 25 17:19:30 2019 +0200
+
+    implemented issue #69 #70 #71
+
+commit 2b6aa035140c8e3facfa83e7006c1262622d47ba
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Sat Aug 24 11:35:55 2019 +0200
+
+    Update README.md
+
+commit e6ea6a3f6a22be97cfa8299eb068d966b8c7ecb5
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Sun Aug 25 16:45:19 2019 +0200
+
+    implemented issues #55 #68
+
+commit e6ea6a3f6a22be97cfa8299eb068d966b8c7ecb5
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Sun Aug 25 16:45:19 2019 +0200
+
+    implemented issues #55 #68
+
+commit 2b6aa035140c8e3facfa83e7006c1262622d47ba
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Sat Aug 24 11:35:55 2019 +0200
+
+    Update README.md
+
+commit 428a492f7fe7e588d5d6ab500d1121cf659282ed
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Sat Aug 24 11:35:43 2019 +0200
+
+    Update README.md
+
+commit bd2072f6ad26084509fffbf1320a6633947ce847
+Author: jeanbono <pierre.fraisse@nebulous.fr>
+Date:   Fri Aug 23 10:34:59 2019 +0200
+
+    Fixed translation
+
+commit 90e9056126d9a0a166cd08e7f7f22a4d90213941
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Fri Aug 23 09:19:47 2019 +0200
+
+    fixed language and move initial state to addon init
+
+commit 0db85b36a45f227af7c79c3172be46b1a36c838f
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Thu Aug 22 16:26:20 2019 +0200
+
+    implemented issue #57
+
+commit 2a45978312c79a3cf2ef1310a707f5b11774f80b
+Author: jeanbono <pierre.fraisse@nebulous.fr>
+Date:   Thu Aug 22 11:50:28 2019 +0200
+
+    Added french translation
+
+commit 6c453d83879983a6948ee427741abb29947b444c
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Thu Aug 22 00:49:53 2019 +0200
+
+    removed stuff
+
+commit 6c453d83879983a6948ee427741abb29947b444c
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Thu Aug 22 00:49:53 2019 +0200
+
+    removed stuff
+
+commit c490165ae9109d75f859d57cddce7e98df3f7715
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Wed Aug 21 12:40:15 2019 +0200
+
+    added import of korean translation file
+
+commit afb03db3c87c32601a9a37a95b920eaf924adf88
+Author: Domenik Irrgang <domenikirrgang@gmail.com>
+Date:   Tue Aug 20 14:07:36 2019 +0200
+
+    fixed version number
+

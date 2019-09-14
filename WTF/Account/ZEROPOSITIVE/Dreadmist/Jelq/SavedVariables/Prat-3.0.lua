@@ -1,0 +1,206 @@
+
+Prat3CharDB = {
+	["history"] = {
+		["cmdhistory"] = {
+			["ChatFrame10EditBox"] = {
+			},
+			["ChatFrame7EditBox"] = {
+			},
+			["ChatFrame5EditBox"] = {
+			},
+			["ChatFrame8EditBox"] = {
+			},
+			["ChatFrame4EditBox"] = {
+			},
+			["ChatFrame6EditBox"] = {
+			},
+			["ChatFrame9EditBox"] = {
+			},
+			["ChatFrame2EditBox"] = {
+			},
+			["ChatFrame3EditBox"] = {
+			},
+			["ChatFrame1EditBox"] = {
+			},
+		},
+	},
+}
+Prat3HighCPUPerCharDB = {
+	["time"] = 1567505058,
+	["scrollback"] = {
+		["ChatFrame1"] = {
+			{
+				"|cff979797[11:02:24]|r|c00000000|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Ægte:3:CHANNEL:1|h|cffc69b6dÆgte|r|h|cffd8d8d8]|r: LFG SFK ", -- [1]
+				0.764705955982208, -- [2]
+				0.901960849761963, -- [3]
+				0.909803986549378, -- [4]
+				67, -- [5]
+				false, -- [6]
+				6, -- [7]
+				7, -- [8]
+			}, -- [1]
+			{
+				"|cff979797[11:03:21]|r|c00000000|r |Hchannel:channel:1|h[1] |h|cffd8d8d8[|r|Hplayer:Ægte-Dreadmist:8:CHANNEL:1|h|cffc69b6dÆgte|r|h|cffd8d8d8]|r: LFG SFK 23 warr dps", -- [1]
+				0.764705955982208, -- [2]
+				0.901960849761963, -- [3]
+				0.909803986549378, -- [4]
+				67, -- [5]
+				false, -- [6]
+				10, -- [7]
+				11, -- [8]
+			}, -- [2]
+			{
+				"|cff979797[11:04:18]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Orgrimmar]|h", -- [1]
+				0.764705955982208, -- [2]
+				0.901960849761963, -- [3]
+				0.909803986549378, -- [4]
+				67, -- [5]
+				false, -- [6]
+				7, -- [7]
+				8, -- [8]
+			}, -- [3]
+			{
+				"|cff979797[11:04:18]|r|c00000000|r |Hchannel:channel:3|h[3] |h Left Channel: |Hchannel:3|h[3. LocalDefense - Orgrimmar]|h", -- [1]
+				0.909803986549378, -- [2]
+				0.894117712974548, -- [3]
+				0.474509835243225, -- [4]
+				69, -- [5]
+				false, -- [6]
+				11, -- [7]
+				12, -- [8]
+			}, -- [4]
+		},
+		["ChatFrame3"] = {
+			{
+				"|cff979797[11:02:23]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Grumbla:1:CHANNEL:2|h|cffffffffGrumbla|r|h|cffd8d8d8]|r: WTS 3x [Small Silk Pack] at bank in org! 30s per bag, cheaper than AH!", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [1]
+			{
+				"|cff979797[11:02:24]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Skarfang:2:CHANNEL:2|h|cff8787edSkarfang|r|h|cffd8d8d8]|r: wts 2x |cffffffff|Hitem:4238::::::::16:::::::|h[Linen Bag]|h|r 5s each", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				4, -- [8]
+			}, -- [2]
+			{
+				"|cff979797[11:02:30]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Boultz:4:CHANNEL:2|h|cffff7c0aBoultz|r|h|cffd8d8d8]|r: LF DPS RFK W ME", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [3]
+			{
+				"|cff979797[11:02:52]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Bortox:5:CHANNEL:2|h|cfffff468Bortox|r|h|cffd8d8d8]|r: |cff1eff00|Hitem:15945::::::::13:::::::|h[Runic Stave]|h|r intersted whisper to me", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				4, -- [8]
+			}, -- [4]
+			{
+				"|cff979797[11:03:00]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Avocato:6:CHANNEL:2|h|cffff7c0aAvocato|r|h|cffd8d8d8]|r: WTS |cffffffff|Hitem:4240::::::::23:::::::|h[Woolen Bag]|h|r Last one must GO! 8s ", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				6, -- [8]
+			}, -- [5]
+			{
+				"|cff979797[11:03:10]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Spacer:7:CHANNEL:2|h|cfff48cbaSpacer|r|h|cffd8d8d8]|r: DPS LFG SM lib", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				8, -- [8]
+			}, -- [6]
+			{
+				"|cff979797[11:03:23]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Propanedream:9:CHANNEL:2|h|cff8787edPropanedream|r|h|cffd8d8d8]|r: lfm 1 dps sfk", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				13, -- [8]
+			}, -- [7]
+			{
+				"|cff979797[11:03:26]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Annarchy:10:CHANNEL:2|h|cfff48cbaAnnarchy|r|h|cffd8d8d8]|r: LFG SFK shammy can heal or dps ", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				15, -- [8]
+			}, -- [8]
+			{
+				"|cff979797[11:03:28]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Rozled:12:CHANNEL:2|h|cffffffffRozled|r|h|cffd8d8d8]|r: healer lfg rfc", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				17, -- [8]
+			}, -- [9]
+			{
+				"|cff979797[11:03:47]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Grumbla-Dreadmist:13:CHANNEL:2|h|cffffffffGrumbla|r|h|cffd8d8d8]|r: WTS 3x [Small Silk Pack] at bank in org! 30s per bag, cheaper than AH!", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				19, -- [8]
+			}, -- [10]
+			{
+				"|cff979797[11:03:49]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Deeps:14:CHANNEL:2|h|cffc69b6dDeeps|r|h|cffd8d8d8]|r: Lfg SM Armory", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				21, -- [8]
+			}, -- [11]
+			{
+				"|cff979797[11:04:04]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Liena:17:CHANNEL:2|h|cff3fc6eaLiena|r|h|cffd8d8d8]|r: 36 mage lfg SM Lib", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				3, -- [8]
+			}, -- [12]
+			{
+				"|cff979797[11:04:08]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Nisse:18:CHANNEL:2|h|cfffff468Nisse|r|h|cffd8d8d8]|r: LFM Gnomereagan!", -- [1]
+				0.909803986549378, -- [2]
+				0.619607865810394, -- [3]
+				0.474509835243225, -- [4]
+				68, -- [5]
+				false, -- [6]
+				1, -- [7]
+				5, -- [8]
+			}, -- [13]
+		},
+	},
+}

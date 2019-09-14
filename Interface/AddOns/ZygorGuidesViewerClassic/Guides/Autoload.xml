@@ -1,0 +1,108 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<!-- Autoloading of included guides. Add your Guide##.lua files here as you please. -->
+
+		<Script>
+		___TG = debugprofilestop()
+		</Script>
+
+		<Script file="Images\Images.lua"/>
+
+
+
+
+
+	<!-- INCLUDES -->
+		<!-- NEUTRAL -->
+		<Script file="Includes\General\N_General_Includes.lua"/>
+		<Script file="Includes\General\N_Quest_Includes.lua"/>
+		<Script file="Includes\PetsMounts\N_Mounts_Includes.lua"/>
+		<Script file="Includes\PetsMounts\N_Pets_Includes.lua"/>
+		<Script file="Includes\Professions\N_Professions_Includes.lua"/>
+		<Script file="Includes\Reputations\N_Reputation_Includes.lua"/>
+		<Script file="Includes\Titles\N_Titles_Includes.lua"/>
+
+		<!-- ALLIANCE -->
+		<Script file="Includes\General\A_General_Includes.lua"/>
+		<Script file="Includes\General\A_Quest_Includes.lua"/>
+		<Script file="Includes\PetsMounts\A_Mounts_Includes.lua"/>
+		<Script file="Includes\PetsMounts\A_Pets_Includes.lua"/>
+		<Script file="Includes\Professions\A_Professions_Includes.lua"/>
+		<Script file="Includes\Reputations\A_Reputation_Includes.lua"/>
+		<Script file="Includes\Titles\A_Titles_Includes.lua"/>
+
+		<!-- HORDE -->
+		<Script file="Includes\General\H_General_Includes.lua"/>
+		<Script file="Includes\General\H_Quest_Includes.lua"/>
+		<Script file="Includes\PetsMounts\H_Mounts_Includes.lua"/>
+		<Script file="Includes\PetsMounts\H_Pets_Includes.lua"/>
+		<Script file="Includes\Professions\H_Professions_Includes.lua"/>
+		<Script file="Includes\Reputations\H_Reputation_Includes.lua"/>
+		<Script file="Includes\Titles\H_Titles_Includes.lua"/>
+
+	<!-- LEVELING -->
+		<!-- CLASSIC -->
+		<Script file="Leveling\ZygorLevelingAllianceCLASSIC.lua"/>
+		<Script file="Leveling\ZygorLevelingAllianceCLASSICTrial.lua"/>
+		<Script file="Leveling\ZygorLevelingHordeCLASSIC.lua"/>
+		<Script file="Leveling\ZygorLevelingHordeCLASSICTrial.lua"/>
+
+
+	<!-- DAILIES -->
+		<!-- CLASSIC -->
+
+
+	<!-- DUNGEONS -->
+		<!-- CLASSIC -->
+
+
+	<!-- GEAR -->
+		<!-- CLASSIC -->
+
+	<!-- PROFESSIONS -->
+		<!-- CLASSIC -->
+
+	<!-- PETS AND MOUNTS -->
+		<!-- CLASSIC -->
+		<Script file="PetsMounts\ZygorHunterPetAllianceCLASSIC.lua"/>
+		<Script file="PetsMounts\ZygorHunterPetAllianceCLASSICTrial.lua"/>
+		<Script file="PetsMounts\ZygorHunterPetHordeCLASSIC.lua"/>
+		<Script file="PetsMounts\ZygorHunterPetHordeCLASSICTrial.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonCLASSIC.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonCLASSICTrial.lua"/>
+	
+	<!-- TITLES -->
+		<!-- CLASSIC -->
+
+
+	<!-- REPUTATIONS -->
+		<!-- CLASSIC -->
+
+	<!-- EVENTS -->
+		<!-- CLASSIC -->
+
+	<!-- GOLD -->
+		<!-- CLASSIC -->
+	
+	<!-- POINTS OF INTEREST -->
+		<!-- CLASSIC -->
+		<!--
+		<Script file="Poi\Common.lua" />
+		-->
+
+	<!--
+	-->
+	
+
+		<Script file="TalentAdvisor-Builds.lua"/>
+
+
+	<!-- user guides -->
+	<!-- bfa alpha change
+	-->
+
+		<Script>
+		ZGV.loading_time_guides = debugprofilestop()-___TG
+		___TG=nil
+		</Script>
+</Ui>

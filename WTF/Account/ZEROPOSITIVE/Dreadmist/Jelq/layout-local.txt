@@ -1,0 +1,8 @@
+Version: 1
+Frame: ZygorGuidesViewerFrameMaster
+FrameLevel: 1
+Anchor: RIGHT
+X: -447
+Y: 10
+W: 40
+H: 40

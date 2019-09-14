@@ -1,0 +1,8 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Script file="..\SharedXML\Util.lua" /> <!-- FrameXML.toc:8 -->
+    <Script file="..\SharedXML\NineSlice.lua" /> <!-- FrameXML.toc:11 -->
+    <Script file="QuestLogOwnerMixin.lua" /> <!-- FrameXML.toc:56 -->
+    <Include file="..\SharedXML\SharedUIPanelTemplates.xml" /> <!-- FrameXML.toc:86 -->
+    <Include file="Minimap.xml" /> <!-- FrameXML.toc:152 -->
+</Ui>

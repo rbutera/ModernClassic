@@ -1,0 +1,12 @@
+<Ui>
+	<Include file="Template.xml"/>
+	<Script file="Main.lua"/>
+	<Script file="HUD_Loop.lua"/>
+	<Script file="HUD_Ring.lua"/>
+	<Script file="FCS.lua"/>
+	<Script file="IFF.lua"/>
+	<Script file="HUD_Class.lua"/>
+	<Script file="Castbar.lua"/>
+	<Script file="Totem.lua"/>
+	<Script file="HUD.lua"/>
+</Ui>

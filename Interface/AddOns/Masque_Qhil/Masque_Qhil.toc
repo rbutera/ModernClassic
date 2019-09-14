@@ -1,0 +1,12 @@
+## Interface: 11302
+## Title: Masque: Qhil
+## Version: 1.2.1
+## Author: qhil
+## Notes: Qhil skin for Masque.
+## Notes-deDE: Qhil-Skin für Masque.
+## Notes-esES: Skin Qhil para Masque.
+## Notes-esMX: Skin Qhil para Masque.
+## Notes-itIT: Skin Qhil per Masque.
+## Dependencies: Masque
+
+Masque_Qhil.lua

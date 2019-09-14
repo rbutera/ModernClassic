@@ -1,0 +1,11 @@
+## Interface: 11302
+## Version: 1.0.8
+## Title: Modern QuestWatch
+## Notes: Improves the Quest Tracker
+## Author: Ketho @ EU-Boulderfist
+## SavedVariables: ModernQuestWatchDB
+## X-Curse-Project-ID: 334528
+## X-WoWI-ID: 24985
+
+Locales.lua
+ModernQuestWatch.lua

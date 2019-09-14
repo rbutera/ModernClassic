@@ -1,0 +1,58 @@
+
+AucAdvancedConfig = {
+	["users.Dreadmist.Adhd"] = "Default",
+	["profile.Default"] = {
+		["configator.left"] = 559.625183105469,
+		["core"] = {
+			["matcher"] = {
+				["matcherlist"] = {
+					"BeanCount", -- [1]
+					"Undercut", -- [2]
+				},
+			},
+		},
+		["stat"] = {
+			["sales"] = {
+				["upgraded32"] = true,
+				["ignoredsigs"] = {
+				},
+			},
+		},
+		["util"] = {
+			["automagic"] = {
+				["ammailguix"] = 160,
+				["SavedMailButtons"] = {
+				},
+			},
+		},
+		["configator.top"] = 764.789123535156,
+	},
+	["version"] = 1,
+}
+AucAdvancedData = {
+	["UtilSearchUiData"] = {
+		["Global"] = {
+			["configator.left"] = 509.625183105469,
+			["configator.top"] = 789.789367675781,
+		},
+		["Current"] = {
+			["snatch.itemsList"] = {
+			},
+		},
+		["Version"] = 1,
+		["SavedSearches"] = {
+		},
+	},
+	["Stats"] = {
+	},
+}
+AucAdvancedServers = {
+	["KnownRealms"] = {
+		["Dreadmist"] = "Dreadmist",
+	},
+	["Timestamp"] = 1567773146,
+	["Version"] = 1,
+	["KnownServerKeys"] = {
+		["Dreadmist"] = 1568295765,
+	},
+}

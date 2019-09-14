@@ -1,0 +1,833 @@
+
+SpartanUIDB = {
+	["namespaces"] = {
+		["FilmEffects"] = {
+			["profiles"] = {
+				["Jelq - Dreadmist"] = {
+					["animationInterval"] = 0.0100000007078052,
+				},
+				["Adhd - Dreadmist"] = {
+					["animationInterval"] = 0.0100000007078052,
+				},
+			},
+		},
+	},
+	["global"] = {
+		["textures"] = {
+			["i"] = 0,
+		},
+		["Version"] = "5.2.6",
+		["Bartender4"] = {
+			["SpartanUI - Classic"] = {
+				["Style"] = "Classic",
+			},
+		},
+		["BartenderChangesActive"] = false,
+	},
+	["profileKeys"] = {
+		["Adhd - Dreadmist"] = "Adhd - Dreadmist",
+		["Jelq - Dreadmist"] = "Jelq - Dreadmist",
+		["Bankk - Dreadmist"] = "Bankk - Dreadmist",
+	},
+	["profiles"] = {
+		["Adhd - Dreadmist"] = {
+			["Modules"] = {
+				["StatusBars"] = {
+					nil, -- [1]
+					{
+						["display"] = "rep",
+					}, -- [2]
+				},
+				["PlayerFrames"] = {
+					["Style"] = "War",
+				},
+				["NamePlates"] = {
+					["elements"] = {
+						["Name"] = {
+						},
+						["Power"] = {
+						},
+						["Health"] = {
+						},
+						["Castbar"] = {
+						},
+						["SUI_ClassIcon"] = {
+						},
+					},
+				},
+				["PartyFrames"] = {
+					["Style"] = "War",
+				},
+				["RaidFrames"] = {
+					["Style"] = "War",
+				},
+				["TauntWatcher"] = {
+					["inArena"] = true,
+					["inRaid"] = true,
+					["inParty"] = true,
+					["FirstLaunch"] = false,
+					["outdoors"] = false,
+					["inBG"] = false,
+				},
+				["Artwork"] = {
+					["FirstLoad"] = false,
+					["SetupDone"] = true,
+					["SlidingTrays"] = {
+						["left"] = {
+							["collapsed"] = true,
+						},
+						["right"] = {
+							["collapsed"] = true,
+						},
+					},
+					["Style"] = "War",
+				},
+				["Objectives"] = {
+					["AlwaysShowScenario"] = true,
+					["SetupDone"] = true,
+					["Rule2"] = {
+						["Status"] = "Disabled",
+						["Combat"] = false,
+					},
+					["Rule1"] = {
+						["Status"] = "Raid",
+						["Combat"] = false,
+					},
+					["Rule3"] = {
+						["Status"] = "Disabled",
+						["Combat"] = false,
+					},
+				},
+			},
+			["SUIProper"] = {
+				["Styles"] = {
+					["Transparent"] = {
+					},
+					["War"] = {
+						["MovedBars"] = {
+							["BT4Bar4"] = false,
+							["BT4Bar2"] = true,
+							["BT4Bar5"] = false,
+							["BT4Bar6"] = false,
+							["BT4BarPetBar"] = true,
+							["BT4Bar3"] = false,
+							["BT4Bar1"] = true,
+							["BT4BarBagBar"] = false,
+						},
+					},
+					["Classic"] = {
+						["Color"] = {
+							["Art"] = false,
+							["PlayerFrames"] = false,
+							["PartyFrames"] = false,
+							["RaidFrames"] = false,
+						},
+						["TalkingHeadUI"] = {
+							["y"] = -30,
+							["relPoint"] = "TOP",
+							["point"] = "BOTTOM",
+							["scale"] = 0.8,
+							["x"] = 0,
+						},
+					},
+				},
+				["EnabledComponents"] = {
+					["MailOpenAll"] = true,
+					["AutoSell"] = true,
+					["Tooltips"] = true,
+					["Minimap"] = true,
+					["CombatLog"] = true,
+					["Objectives"] = true,
+					["InterruptAnnouncer"] = true,
+					["Nameplates"] = true,
+					["Buffs"] = true,
+					["AutoTurnIn"] = true,
+					["TauntWatcher"] = true,
+				},
+				["Tooltips"] = {
+					["Override"] = {
+					},
+					["Color"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.4, -- [4]
+					},
+					["Rule1"] = {
+						["Status"] = "All",
+						["OverrideLoc"] = false,
+						["Combat"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["onMouse"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+					["ActiveStyle"] = "smoke",
+					["Styles"] = {
+						["metal"] = {
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\metal.tga",
+							["tile"] = false,
+						},
+						["smoke"] = {
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\smoke.tga",
+							["tile"] = false,
+						},
+						["smooth"] = {
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\Smoothv2.tga",
+							["tile"] = false,
+						},
+						["none"] = {
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\blank.tga",
+							["tile"] = false,
+						},
+					},
+					["VendorPrices"] = true,
+					["ColorOverlay"] = true,
+					["Rule2"] = {
+						["Status"] = "Disabled",
+						["OverrideLoc"] = false,
+						["Combat"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["onMouse"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+					["SuppressNoMatch"] = true,
+					["Rule3"] = {
+						["Status"] = "Disabled",
+						["OverrideLoc"] = false,
+						["Combat"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["onMouse"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+				},
+				["BT4Profile"] = "SpartanUI - War",
+				["font"] = {
+					["SetupDone"] = true,
+				},
+				["Bartender4Version"] = "4.8.5",
+				["SetupWizard"] = {
+					["FirstLaunch"] = false,
+				},
+				["MailOpenAll"] = {
+					["Silent"] = false,
+					["FreeSpace"] = 0,
+					["FirstLaunch"] = true,
+				},
+				["SetupDone"] = true,
+				["AutoSell"] = {
+					["FirstLaunch"] = false,
+					["MaxILVL"] = 40,
+				},
+				["CombatLog"] = {
+					["heroicdungeon"] = false,
+					["loggingActive"] = false,
+					["debug"] = false,
+					["raidheroic"] = false,
+					["raidlfr"] = false,
+					["alwayson"] = false,
+					["raidlegacy"] = false,
+					["raidnormal"] = true,
+					["FirstLaunch"] = false,
+					["mythicplus"] = false,
+					["mythicdungeon"] = false,
+					["logging"] = false,
+					["normaldungeon"] = false,
+					["announce"] = true,
+					["raidmythic"] = false,
+				},
+				["Version"] = "5.2.6",
+				["Buffs"] = {
+					["Rule1"] = {
+						["offset"] = 0,
+						["Combat"] = false,
+						["Status"] = "Disabled",
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+					["Override"] = {
+					},
+					["Rule2"] = {
+						["offset"] = 0,
+						["Combat"] = false,
+						["Status"] = "Disabled",
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+					["Rule3"] = {
+						["offset"] = 0,
+						["Combat"] = false,
+						["Status"] = "Disabled",
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+				},
+				["AutoTurnIn"] = {
+					["autoequip"] = true,
+					["FirstLaunch"] = false,
+				},
+				["InterruptAnnouncer"] = {
+					["inArena"] = true,
+					["inRaid"] = true,
+					["always"] = false,
+					["inParty"] = true,
+					["inBG"] = false,
+					["outdoors"] = false,
+					["FirstLaunch"] = false,
+					["announceLocation"] = "SMART",
+					["text"] = "Interrupted %t %spell",
+					["includePets"] = true,
+				},
+			},
+		},
+		["Jelq - Dreadmist"] = {
+			["Modules"] = {
+				["Objectives"] = {
+					["AlwaysShowScenario"] = true,
+					["SetupDone"] = true,
+					["Rule2"] = {
+						["Status"] = "Disabled",
+						["Combat"] = false,
+					},
+					["Rule3"] = {
+						["Status"] = "Disabled",
+						["Combat"] = false,
+					},
+					["Rule1"] = {
+						["Status"] = "Raid",
+						["Combat"] = false,
+					},
+				},
+				["PartyFrames"] = {
+					["Style"] = "War",
+				},
+				["StatusBars"] = {
+					nil, -- [1]
+					{
+						["display"] = "rep",
+					}, -- [2]
+				},
+				["RaidFrames"] = {
+					["Style"] = "War",
+				},
+				["Artwork"] = {
+					["SetupDone"] = true,
+					["FirstLoad"] = false,
+					["Style"] = "War",
+				},
+				["PlayerFrames"] = {
+					["Style"] = "War",
+				},
+				["NamePlates"] = {
+					["elements"] = {
+						["Health"] = {
+						},
+						["Castbar"] = {
+						},
+						["Name"] = {
+						},
+						["Power"] = {
+						},
+						["SUI_ClassIcon"] = {
+						},
+					},
+				},
+				["TauntWatcher"] = {
+					["inArena"] = true,
+					["inRaid"] = true,
+					["FirstLaunch"] = false,
+					["inParty"] = true,
+					["outdoors"] = false,
+					["inBG"] = false,
+				},
+			},
+			["SUIProper"] = {
+				["MailOpenAll"] = {
+					["Silent"] = false,
+					["FreeSpace"] = 0,
+					["FirstLaunch"] = true,
+				},
+				["AutoSell"] = {
+					["FirstLaunch"] = false,
+					["AutoRepair"] = true,
+					["MaxILVL"] = 40,
+				},
+				["Styles"] = {
+					["Classic"] = {
+						["Color"] = {
+							["PlayerFrames"] = false,
+							["Art"] = false,
+							["PartyFrames"] = false,
+							["RaidFrames"] = false,
+						},
+						["TalkingHeadUI"] = {
+							["y"] = -30,
+							["relPoint"] = "TOP",
+							["point"] = "BOTTOM",
+							["scale"] = 0.8,
+							["x"] = 0,
+						},
+					},
+					["Fel"] = {
+						["SubTheme"] = "Digital",
+					},
+					["War"] = {
+					},
+					["Transparent"] = {
+						["MovedBars"] = {
+							["BT4Bar4"] = false,
+							["BT4Bar2"] = false,
+							["BT4Bar5"] = false,
+							["BT4Bar6"] = false,
+							["BT4Bar3"] = false,
+							["BT4Bar1"] = false,
+							["BT4BarBagBar"] = false,
+						},
+					},
+				},
+				["MiniMap"] = {
+					["ManualAllowUse"] = true,
+					["AutoDetectAllowUse"] = false,
+					["ManualAllowPrompt"] = "0",
+				},
+				["SetupDone"] = true,
+				["EnabledComponents"] = {
+					["MailOpenAll"] = true,
+					["AutoSell"] = true,
+					["Tooltips"] = true,
+					["Minimap"] = true,
+					["CombatLog"] = true,
+					["TauntWatcher"] = true,
+					["Buffs"] = true,
+					["Nameplates"] = true,
+					["AutoTurnIn"] = true,
+					["InterruptAnnouncer"] = true,
+					["Objectives"] = true,
+				},
+				["Tooltips"] = {
+					["Override"] = {
+					},
+					["Color"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.4, -- [4]
+					},
+					["Rule1"] = {
+						["Status"] = "All",
+						["Anchor"] = {
+							["AnchorPos"] = {
+							},
+							["onMouse"] = false,
+							["Moved"] = false,
+						},
+						["Combat"] = false,
+						["OverrideLoc"] = false,
+					},
+					["Rule3"] = {
+						["Status"] = "Disabled",
+						["Anchor"] = {
+							["AnchorPos"] = {
+							},
+							["onMouse"] = false,
+							["Moved"] = false,
+						},
+						["Combat"] = false,
+						["OverrideLoc"] = false,
+					},
+					["SuppressNoMatch"] = true,
+					["ColorOverlay"] = true,
+					["VendorPrices"] = true,
+					["Rule2"] = {
+						["Status"] = "Disabled",
+						["Anchor"] = {
+							["AnchorPos"] = {
+							},
+							["onMouse"] = false,
+							["Moved"] = false,
+						},
+						["Combat"] = false,
+						["OverrideLoc"] = false,
+					},
+					["Styles"] = {
+						["none"] = {
+							["tile"] = false,
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\blank.tga",
+						},
+						["smoke"] = {
+							["tile"] = false,
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\smoke.tga",
+						},
+						["smooth"] = {
+							["tile"] = false,
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\Smoothv2.tga",
+						},
+						["metal"] = {
+							["tile"] = false,
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\metal.tga",
+						},
+					},
+					["ActiveStyle"] = "smoke",
+				},
+				["Bartender4Version"] = "4.8.5",
+				["CombatLog"] = {
+					["heroicdungeon"] = false,
+					["loggingActive"] = false,
+					["debug"] = false,
+					["raidheroic"] = false,
+					["raidlfr"] = false,
+					["raidmythic"] = false,
+					["raidlegacy"] = false,
+					["raidnormal"] = false,
+					["FirstLaunch"] = false,
+					["mythicplus"] = false,
+					["normaldungeon"] = false,
+					["logging"] = false,
+					["mythicdungeon"] = false,
+					["announce"] = true,
+					["alwayson"] = false,
+				},
+				["font"] = {
+					["SetupDone"] = true,
+				},
+				["BT4Profile"] = "SpartanUI - War",
+				["Buffs"] = {
+					["Rule3"] = {
+						["offset"] = 0,
+						["Combat"] = false,
+						["Status"] = "Disabled",
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["AnchorPos"] = {
+							},
+							["Moved"] = false,
+						},
+					},
+					["Override"] = {
+					},
+					["Rule2"] = {
+						["offset"] = 0,
+						["Combat"] = false,
+						["Status"] = "Disabled",
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["AnchorPos"] = {
+							},
+							["Moved"] = false,
+						},
+					},
+					["Rule1"] = {
+						["offset"] = 0,
+						["Combat"] = false,
+						["Status"] = "Disabled",
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["AnchorPos"] = {
+							},
+							["Moved"] = false,
+						},
+					},
+				},
+				["Version"] = "5.2.6",
+				["AutoTurnIn"] = {
+					["autoequip"] = true,
+					["FirstLaunch"] = false,
+				},
+				["SetupWizard"] = {
+					["FirstLaunch"] = false,
+				},
+				["InterruptAnnouncer"] = {
+					["inArena"] = true,
+					["inRaid"] = true,
+					["always"] = false,
+					["inParty"] = true,
+					["inBG"] = false,
+					["outdoors"] = false,
+					["announceLocation"] = "SMART",
+					["FirstLaunch"] = false,
+					["includePets"] = true,
+					["text"] = "Interrupted %t %spell",
+				},
+			},
+		},
+		["Bankk - Dreadmist"] = {
+			["Modules"] = {
+				["TauntWatcher"] = {
+					["inArena"] = true,
+					["inRaid"] = true,
+					["FirstLaunch"] = false,
+					["inParty"] = true,
+					["outdoors"] = false,
+					["inBG"] = false,
+				},
+				["StatusBars"] = {
+					nil, -- [1]
+					{
+						["display"] = "rep",
+					}, -- [2]
+				},
+				["Artwork"] = {
+					["SetupDone"] = true,
+					["FirstLoad"] = false,
+					["Style"] = "Classic",
+					["Viewport"] = {
+						["offset"] = {
+							["bottom"] = 2.8,
+						},
+					},
+				},
+				["PlayerFrames"] = {
+					["target"] = {
+						["Anchors"] = {
+							["relativeTo"] = "UIParent",
+							["point"] = "BOTTOMLEFT",
+							["relativePoint"] = "TOP",
+							["yOfs"] = -3,
+							["xOfs"] = 54,
+						},
+					},
+				},
+				["NamePlates"] = {
+					["elements"] = {
+						["Name"] = {
+						},
+						["Power"] = {
+						},
+						["Health"] = {
+						},
+						["Castbar"] = {
+						},
+						["SUI_ClassIcon"] = {
+						},
+					},
+				},
+				["Objectives"] = {
+					["AlwaysShowScenario"] = true,
+					["SetupDone"] = true,
+					["Rule2"] = {
+						["Status"] = "Disabled",
+						["Combat"] = false,
+					},
+					["Rule1"] = {
+						["Status"] = "Raid",
+						["Combat"] = false,
+					},
+					["Rule3"] = {
+						["Status"] = "Disabled",
+						["Combat"] = false,
+					},
+				},
+			},
+			["SUIProper"] = {
+				["MailOpenAll"] = {
+					["Silent"] = false,
+					["FreeSpace"] = 0,
+					["FirstLaunch"] = true,
+				},
+				["Styles"] = {
+					["War"] = {
+					},
+					["Classic"] = {
+						["Color"] = {
+							["Art"] = false,
+							["PlayerFrames"] = false,
+							["PartyFrames"] = false,
+							["RaidFrames"] = false,
+						},
+						["TalkingHeadUI"] = {
+							["y"] = -30,
+							["relPoint"] = "TOP",
+							["point"] = "BOTTOM",
+							["scale"] = 0.8,
+							["x"] = 0,
+						},
+					},
+					["Transparent"] = {
+					},
+				},
+				["yoffset"] = 1,
+				["EnabledComponents"] = {
+					["MailOpenAll"] = true,
+					["AutoSell"] = true,
+					["Tooltips"] = true,
+					["Minimap"] = true,
+					["CombatLog"] = true,
+					["Objectives"] = true,
+					["InterruptAnnouncer"] = true,
+					["Nameplates"] = true,
+					["AutoTurnIn"] = true,
+					["Buffs"] = true,
+					["TauntWatcher"] = true,
+				},
+				["SetupDone"] = true,
+				["font"] = {
+					["SetupDone"] = true,
+				},
+				["Tooltips"] = {
+					["Override"] = {
+					},
+					["Color"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.4, -- [4]
+					},
+					["Rule1"] = {
+						["Status"] = "All",
+						["Combat"] = false,
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["onMouse"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+					["ActiveStyle"] = "smoke",
+					["Styles"] = {
+						["metal"] = {
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\metal.tga",
+							["tile"] = false,
+						},
+						["smoke"] = {
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\smoke.tga",
+							["tile"] = false,
+						},
+						["smooth"] = {
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\Smoothv2.tga",
+							["tile"] = false,
+						},
+						["none"] = {
+							["bgFile"] = "Interface\\AddOns\\SpartanUI\\media\\blank.tga",
+							["tile"] = false,
+						},
+					},
+					["VendorPrices"] = true,
+					["ColorOverlay"] = true,
+					["Rule2"] = {
+						["Status"] = "Disabled",
+						["Combat"] = false,
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["onMouse"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+					["SuppressNoMatch"] = true,
+					["Rule3"] = {
+						["Status"] = "Disabled",
+						["Combat"] = false,
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["onMouse"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+				},
+				["AutoTurnIn"] = {
+					["FirstLaunch"] = false,
+				},
+				["Bartender4Version"] = "4.8.5",
+				["CombatLog"] = {
+					["heroicdungeon"] = false,
+					["loggingActive"] = false,
+					["debug"] = false,
+					["raidheroic"] = true,
+					["raidlfr"] = false,
+					["alwayson"] = false,
+					["raidlegacy"] = false,
+					["raidnormal"] = true,
+					["FirstLaunch"] = false,
+					["mythicplus"] = true,
+					["mythicdungeon"] = false,
+					["logging"] = false,
+					["normaldungeon"] = false,
+					["announce"] = true,
+					["raidmythic"] = true,
+				},
+				["BT4Profile"] = "Bankk - Dreadmist",
+				["AutoSell"] = {
+					["FirstLaunch"] = false,
+					["MaxILVL"] = 40,
+				},
+				["Version"] = "5.2.6",
+				["Buffs"] = {
+					["Rule1"] = {
+						["offset"] = 0,
+						["Combat"] = false,
+						["Status"] = "Disabled",
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+					["Override"] = {
+					},
+					["Rule2"] = {
+						["offset"] = 0,
+						["Combat"] = false,
+						["Status"] = "Disabled",
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+					["Rule3"] = {
+						["offset"] = 0,
+						["Combat"] = false,
+						["Status"] = "Disabled",
+						["OverrideLoc"] = false,
+						["Anchor"] = {
+							["Moved"] = false,
+							["AnchorPos"] = {
+							},
+						},
+					},
+				},
+				["SetupWizard"] = {
+					["FirstLaunch"] = false,
+				},
+				["InterruptAnnouncer"] = {
+					["inArena"] = true,
+					["inRaid"] = true,
+					["always"] = false,
+					["inParty"] = true,
+					["inBG"] = false,
+					["outdoors"] = false,
+					["FirstLaunch"] = false,
+					["announceLocation"] = "SMART",
+					["text"] = "Interrupted %t %spell",
+					["includePets"] = true,
+				},
+			},
+		},
+	},
+}

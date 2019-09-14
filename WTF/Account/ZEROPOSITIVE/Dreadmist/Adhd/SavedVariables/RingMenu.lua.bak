@@ -1,0 +1,22 @@
+
+RingMenu_globalConfig = {
+	["numRings"] = 1,
+	["allowMultipleOpenRings"] = false,
+}
+RingMenu_ringConfig = {
+	{
+		["backdropColor"] = {
+			["a"] = 0.5,
+			["b"] = 0,
+			["g"] = 0,
+			["r"] = 0,
+		},
+		["radius"] = 100,
+		["angle"] = 0,
+		["backdropScale"] = 1.5,
+		["closeOnClick"] = true,
+		["keyBind"] = "BUTTON3",
+		["numSlots"] = 12,
+		["firstSlot"] = 108,
+	}, -- [1]
+}

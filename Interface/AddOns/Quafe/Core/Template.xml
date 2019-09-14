@@ -1,0 +1,409 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+	
+	<Button name = "Quafe_AuraButtonTemplate" inherits = "SecureActionButtonTemplate" virtual="true">
+		<Size x="26" y="26"/>
+		<Attributes>
+			<Attribute name="type2" value="cancelaura"/>
+		</Attributes>
+		<Scripts>
+			<OnLoad function="Quafe_BuffFrameButton_OnLoad"/>
+			<OnEnter>
+				GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT", 0, -5)
+				if(self:GetAttribute"index") then
+					GameTooltip:SetUnitAura(SecureButton_GetUnit(self:GetParent()), self:GetID(), self:GetParent():GetAttribute("filter"))
+				elseif(self:GetAttribute"target-slot") then
+					GameTooltip:SetInventoryItem("player", self:GetID())
+				end
+			</OnEnter>
+			<OnLeave function="GameTooltip_Hide"/>
+		</Scripts>
+	</Button>
+
+	<Frame name = "Quafe_GarrisonNotificationTemplate"  hidden="true" virtual="true">
+		<Animations>
+			<AnimationGroup parentKey="Pulse" setToFinalAlpha="true" looping="REPEAT">
+				<Alpha duration="0" order="0" fromAlpha="0" toAlpha="0" />
+				<Alpha smoothing="IN" duration="0.75" order="1" fromAlpha="0" toAlpha="1" />
+				<Alpha smoothing="OUT" duration="0.75" order="2" fromAlpha="1" toAlpha="0" />
+			</AnimationGroup>
+		</Animations>
+		<Scripts>
+			<OnShow>
+				self.Pulse:Play()
+			</OnShow>
+			<OnHide>
+				self.Pulse:Stop()
+			</OnHide>
+		</Scripts>
+	</Frame>
+
+	<Frame name = "Quafe_WarnFlashTemplate" hidden="true" virtual = "true">
+		<Animations>
+			<AnimationGroup parentKey="Pulse" setToFinalAlpha="true" looping="REPEAT">
+				<Alpha duration="0" order="0" fromAlpha="0" toAlpha="0" />
+				<Alpha smoothing="IN" duration="0.2" order="1" fromAlpha="0" toAlpha="1" />
+				<Alpha duration="0.2" order="2" fromAlpha="1" toAlpha="1" />
+				<Alpha smoothing="OUT" duration="0.2" order="3" fromAlpha="1" toAlpha="0" />
+			</AnimationGroup>
+		</Animations>
+		<Scripts>
+			<OnShow>
+				self.Pulse:Play()
+			</OnShow>
+			<OnHide>
+				self.Pulse:Stop()
+			</OnHide>
+		</Scripts>
+	</Frame>
+
+	<Frame name = "Quafe_LeftSlideTemplate" virtual = "true">
+		<Animations>
+			<AnimationGroup parentKey = "SlideIn" setToFinalAlpha = "true">
+				<Alpha order="1" duration="0" fromAlpha="0" toAlpha="0" />
+				<Translation order="1" duration="0"  offsetX="-50" offsetY="0" />
+				
+				<Alpha order="2" smoothing="OUT" duration="0.25" fromAlpha="0" toAlpha="1" />
+				<Translation order="2" smoothing="OUT" duration="0.25" offsetX="50" offsetY="0" />
+				<Scripts>
+					<OnPlay>
+						self:GetParent().SlideOut:Stop()
+						self:GetParent():Show()
+					</OnPlay>
+					<OnStop>
+						self:GetParent(): Show()
+					</OnStop>
+				</Scripts>
+			</AnimationGroup>
+			<AnimationGroup parentKey="SlideOut" setToFinalAlpha="true">
+				<Alpha order="1" smoothing="OUT" duration="0.25" fromAlpha="1" toAlpha="0" />
+				<Translation order="1" smoothing="OUT" duration="0.25" offsetX="-25" offsetY="0" />
+				<Scripts>
+					<OnPlay>
+						self:GetParent().SlideIn: Stop()
+					</OnPlay>
+					<!--<OnStop>
+						self:GetParent(): Show()
+					</OnStop>-->
+					<OnFinished>
+						self:GetParent(): Hide()
+					</OnFinished>
+				</Scripts>
+			</AnimationGroup>
+		</Animations>
+	</Frame>
+
+	<Frame name = "Quafe_RightSlideTemplate" virtual = "true">
+		<Animations>
+			<AnimationGroup parentKey = "SlideIn" setToFinalAlpha = "true">
+				<Alpha order="1" duration="0" fromAlpha="0" toAlpha="0" />
+				<Translation order="1" duration="0"  offsetX="50" offsetY="0" />
+				
+				<Alpha order="2" smoothing="OUT" duration="0.25" fromAlpha="0" toAlpha="1" />
+				<Translation order="2" smoothing="OUT" duration="0.25" offsetX="-50" offsetY="0" />
+				<Scripts>
+					<OnPlay>
+						self:GetParent().SlideOut:Stop()
+						self:GetParent():Show()
+					</OnPlay>
+					<OnStop>
+						self:GetParent(): Show()
+					</OnStop>
+				</Scripts>
+			</AnimationGroup>
+			<AnimationGroup parentKey="SlideOut" setToFinalAlpha="true">
+				<Alpha order="1" smoothing="OUT" duration="0.25" fromAlpha="1" toAlpha="0" />
+				<Translation order="1" smoothing="OUT" duration="0.25" offsetX="25" offsetY="0" />
+				<Scripts>
+					<OnPlay>
+						self:GetParent().SlideIn: Stop()
+					</OnPlay>
+					<!--<OnStop>
+						self:GetParent(): Show()
+					</OnStop>-->
+					<OnFinished>
+						self:GetParent(): Hide()
+					</OnFinished>
+				</Scripts>
+			</AnimationGroup>
+		</Animations>
+	</Frame>
+	
+	<Button name = "Quafe_QuestLogItemButtonTemplate" inherits="SecureActionButtonTemplate" virtual="true">
+		<Size x="26" y="26"/>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString parentKey="HotKey" inherits="NumberFontNormalSmallGray" justifyH="LEFT" text="RANGE_INDICATOR">
+					<Size x="29" y="10"/>
+					<Anchors>
+						<Anchor point="TOPRIGHT" x="16" y="-2"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+			<Layer level="BORDER">
+				<Texture parentKey="icon"/>
+				<FontString parentKey="Count" inherits="NumberFontNormal" justifyH="RIGHT" hidden="true">
+					<Anchors>
+						<Anchor point="BOTTOMRIGHT" x="-3" y="2"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Cooldown parentKey="Cooldown" inherits="CooldownFrameTemplate"/>
+		</Frames>
+		
+		<Attributes>
+	   		<Attribute name="type" value="item" />
+		</Attributes>
+		
+		<Scripts>
+			<OnLoad function="QuestObjectiveItem_OnLoad"/>
+			<OnEvent function="QuestObjectiveItem_OnEvent"/>
+			<OnUpdate function="QuestObjectiveItem_OnUpdate"/>
+			<OnShow function="QuestObjectiveItem_OnShow"/>
+			<OnHide function="QuestObjectiveItem_OnHide"/>
+			<OnEnter function="QuestObjectiveItem_OnEnter"/>
+			<OnLeave>
+				GameTooltip:Hide();
+			</OnLeave>
+		</Scripts>
+		
+		<NormalTexture parentKey="NormalTexture" file="Interface\Buttons\UI-Quickslot2">
+			<Size x="42" y="42"/>
+			<Anchors>
+				<Anchor point="CENTER"/>
+			</Anchors>
+		</NormalTexture>
+		<PushedTexture file="Interface\Buttons\UI-Quickslot-Depress"/>
+		<HighlightTexture file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD"/>		
+	</Button>
+
+	<!--Bag and Bank-->
+	<ItemButton name="Quafe_BackpackButtonTemplate" mixin="BagSlotMixin" inherits="ItemAnimTemplate" virtual="true">
+		<Layers>
+			<Layer level="OVERLAY">
+				<Texture parentKey="SlotHighlightTexture" alphaMode="ADD" file="Interface\Buttons\CheckButtonHilight" setAllPoints="true" hidden="true"/>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnClick>
+				PutItemInBackpack()
+			</OnClick>
+			<OnReceiveDrag>
+				PutItemInBackpack()
+			</OnReceiveDrag>
+			<OnEnter>
+				GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+				GameTooltip:SetText(BACKPACK_TOOLTIP, 1.0, 1.0, 1.0);
+				local keyBinding = GetBindingKey("TOGGLEBACKPACK");
+				if ( keyBinding ) then
+					GameTooltip:AppendText(" "..NORMAL_FONT_COLOR_CODE.."("..keyBinding..")"..FONT_COLOR_CODE_CLOSE);
+				end
+				GameTooltip:Show();
+			</OnEnter>
+			<OnLeave function="GameTooltip_Hide"/>
+			<OnEvent>
+				ItemAnim_OnEvent(self, event, ...)
+			</OnEvent>
+		</Scripts>
+	</ItemButton>
+	<CheckButton name="Quafe_BackpackButtonClassicTemplate" inherits="ItemButtonTemplate" virtual="true">
+		<Scripts>
+			<OnLoad>
+				ItemAnim_OnLoad(self)
+				self:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+				local slotName = self:GetName();
+				local texture = _G[slotName.."IconTexture"];
+				texture:SetTexture("Interface\\Buttons\\Button-Backpack-Up");
+			</OnLoad>
+			<OnClick>
+				if ( IsModifiedClick() ) then
+					BagSlotButton_OnModifiedClick(self, button);
+				else
+					local id = self:GetID();
+					local translatedID = id - CharacterBag0Slot:GetID() + 1
+					local hadItem = PutItemInBag(id);
+					if ( not hadItem ) then
+						if button == "LeftButton" then
+							BagSlotButton_OnDrag(self, button)
+						else
+							ToggleBag(translatedID);
+						end
+					end
+				end
+			</OnClick>
+			<OnDragStart>
+				BagSlotButton_OnDrag(self, button);
+			</OnDragStart>
+			<OnReceiveDrag>
+				local id = self:GetID();
+				local translatedID = id - CharacterBag0Slot:GetID() + 1
+				local hadItem = PutItemInBag(id);
+				if ( not hadItem ) then
+					if button == "LeftButton" then
+						BagSlotButton_OnDrag(self, button)
+					else
+						ToggleBag(translatedID);
+					end
+				end
+			</OnReceiveDrag>
+			<OnEnter>
+				GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+				GameTooltip:SetText(BACKPACK_TOOLTIP, 1.0, 1.0, 1.0);
+				GameTooltip:Show();
+			</OnEnter>
+			<OnLeave>
+				GameTooltip:Hide();
+				ResetCursor();
+			</OnLeave>
+		</Scripts>
+	</CheckButton>
+	<ItemButton name="Quafe_BagSlotButtonTemplate" inherits="BagSlotButtonTemplate" virtual="true">
+		<Scripts>
+			<OnClick>
+				if ( IsModifiedClick() ) then
+					BagSlotButton_OnModifiedClick(self, button);
+				else
+					local id = self:GetID();
+					local translatedID = self:GetBagID();
+					local hadItem = PutItemInBag(id);
+					if ( not hadItem ) then
+						if button == "LeftButton" then
+							BagSlotButton_OnDrag(self, button)
+						else
+							ToggleBag(translatedID);
+						end
+					end
+				end
+			</OnClick>
+			<OnDragStart>
+				BagSlotButton_OnDrag(self, button);
+			</OnDragStart>
+			<OnReceiveDrag>
+				local id = self:GetID();
+				local translatedID = self:GetBagID();
+				local hadItem = PutItemInBag(id);
+				if ( not hadItem ) then
+					if button == "LeftButton" then
+						BagSlotButton_OnDrag(self, button)
+					else
+						ToggleBag(translatedID);
+					end
+				end
+			</OnReceiveDrag>
+			<OnEnter>
+				BagSlotButton_OnEnter(self, motion);
+			</OnEnter>
+			<OnLeave>
+				GameTooltip:Hide();
+				ResetCursor();
+			</OnLeave>
+		</Scripts>
+	</ItemButton>
+	<CheckButton name="Quafe_BagSlotButtonClassicTemplate" inherits="BagSlotButtonTemplate" virtual="true">
+		<Scripts>
+			<OnClick>
+				if ( IsModifiedClick() ) then
+					BagSlotButton_OnModifiedClick(self, button);
+				else
+					local id = self:GetID();
+					local translatedID = id - CharacterBag0Slot:GetID() + 1
+					local hadItem = PutItemInBag(id);
+					if ( not hadItem ) then
+						if button == "LeftButton" then
+							BagSlotButton_OnDrag(self, button)
+						else
+							ToggleBag(translatedID);
+						end
+					end
+				end
+			</OnClick>
+			<OnDragStart>
+				BagSlotButton_OnDrag(self, button);
+			</OnDragStart>
+			<OnReceiveDrag>
+				local id = self:GetID();
+				local translatedID = id - CharacterBag0Slot:GetID() + 1
+				local hadItem = PutItemInBag(id);
+				if ( not hadItem ) then
+					if button == "LeftButton" then
+						BagSlotButton_OnDrag(self, button)
+					else
+						ToggleBag(translatedID);
+					end
+				end
+			</OnReceiveDrag>
+			<OnEnter>
+				BagSlotButton_OnEnter(self, motion);
+			</OnEnter>
+			<OnLeave>
+				GameTooltip:Hide();
+				ResetCursor();
+			</OnLeave>
+		</Scripts>
+	</CheckButton>
+	<ItemButton name="Quafe_BankSlotButtonTemplate" inherits="BankItemButtonBagTemplate" virtual="true">
+		<Scripts>
+			<OnClick>
+				if ( IsModifiedClick() ) then
+					BankFrameItemButtonBag_Pickup(self);
+				else
+					local inventoryID = self:GetInventorySlot();
+					local hadItem = PutItemInBag(inventoryID);
+					local id = self:GetID();
+					if ( not hadItem ) then
+						if button == "LeftButton" then
+							BankFrameItemButtonBag_Pickup(self, button)
+						else
+							ToggleBag(id+NUM_BAG_SLOTS)
+						end
+					end
+				end
+			</OnClick>
+			<OnReceiveDrag>
+				local inventoryID = self:GetInventorySlot();
+				local hadItem = PutItemInBag(inventoryID);
+				local id = self:GetID();
+				if ( not hadItem ) then
+					if button == "LeftButton" then
+						BankFrameItemButtonBag_Pickup(self, button)
+					else
+						ToggleBag(id+NUM_BAG_SLOTS)
+					end
+				end
+			</OnReceiveDrag>
+		</Scripts>
+	</ItemButton>
+	<CheckButton name="Quafe_BankSlotButtonClassicTemplate" inherits="BankItemButtonBagTemplate" virtual="true">
+		<Scripts>
+			<OnClick>
+				if ( IsModifiedClick() ) then
+					BankFrameItemButtonBag_Pickup(self);
+				else
+					local inventoryID = self:GetInventorySlot();
+					local hadItem = PutItemInBag(inventoryID);
+					local id = self:GetID();
+					if ( not hadItem ) then
+						if button == "LeftButton" then
+							BankFrameItemButtonBag_Pickup(self, button)
+						else
+							ToggleBag(id+NUM_BAG_SLOTS)
+						end
+					end
+				end
+			</OnClick>
+			<OnReceiveDrag>
+				local inventoryID = self:GetInventorySlot();
+				local hadItem = PutItemInBag(inventoryID);
+				local id = self:GetID();
+				if ( not hadItem ) then
+					if button == "LeftButton" then
+						BankFrameItemButtonBag_Pickup(self, button)
+					else
+						ToggleBag(id+NUM_BAG_SLOTS)
+					end
+				end
+			</OnReceiveDrag>
+		</Scripts>
+	</CheckButton>
+</Ui>

@@ -1,0 +1,9 @@
+## Interface: 11302
+## Title: TwitchEmotes
+## Author: Axt
+## Version: v2
+## SavedVariablesPerCharacter: Emoticons_Settings Emoticons_Eyecandy
+UIDropDownMenuTemplates.xml
+UIDropDownMenu.lua
+TwitchEmotes.lua
+TwitchEmotes.xml

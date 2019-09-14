@@ -1,0 +1,21 @@
+## Interface: 11302
+## Title: Zygor Guides Viewer Classic
+## Notes: Free multi-purpose leveling guide viewer.|n|nDesigned for use with Zygor Guides, but supporting user-supplied guides as well.
+## Author: Zygor Guides
+## DefaultState: enabled
+## LoadOnDemand: 0
+## SavedVariables: ZygorGuidesViewerClassicSettings
+## - SavedVariablesPerCharacter: ZygorGuidesViewerClassicSettingsChar
+## OptionalDeps: Cartographer, Cartographer3, TomTom, WorldQuestTracker
+## X-Category: 
+## X-Credits: 
+## X-eMail: zygor@zygorguides.com
+## X-Website: http://zygorguides.com/
+## X-License: GPL
+## Version: 1.0
+
+Libs\Libs.xml
+
+Localization\Localization.xml
+
+files.xml

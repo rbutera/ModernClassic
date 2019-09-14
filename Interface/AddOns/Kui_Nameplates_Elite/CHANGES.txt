@@ -1,0 +1,10 @@
+lightweight tag 44807e41a4a254ced2ec0f69fad63422a81e0a26 v1.0-classic
+Author:	Eliote <>
+Date:	Thu Aug 29 23:11:02 2019 -0300
+
+commit 44807e41a4a254ced2ec0f69fad63422a81e0a26
+Author: Eliote <>
+Date:   Thu Aug 29 23:11:02 2019 -0300
+
+    WoW Classic!
+

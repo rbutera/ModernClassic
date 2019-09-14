@@ -1,0 +1,21 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/FrameXML/UI.xsd">
+	<Script file="data.lua" />
+	<Script file="data_advanced.lua" />
+	<Script file="data_borders.lua" />
+	<Script file="data_dungeons.lua" />
+	<Script file="data_floorcrossings.lua" />
+	<Script file="data_indoors.lua" />
+	<Script file="data_inns.lua" />
+	<Script file="data_items.lua" />
+	<Script file="data_transit.lua" />
+
+	<Script file="baked_ally.lua" />
+	<Script file="baked_horde.lua" />
+	<Script file="baked_neutral.lua" />
+	
+	<Script file="Node.lua" />
+	<Script file="NodeSet.lua" />
+	<Script file="NodeSetHeap.lua" />
+	<Script file="Region.lua" />
+	<Script file="LibRover-1.0.lua" />
+</Ui>

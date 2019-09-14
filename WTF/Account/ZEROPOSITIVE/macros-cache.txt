@@ -1,0 +1,13 @@
+VER 3 0000000000000002 "PLUG" "132092"
+/g Live @ twitch.tv/ya_boi_Rai_Rai
+END
+VER 3 0000000000000003 "Pull" "INV_MISC_QUESTIONMARK"
+#showtooltip Auto Shot
+/cleartarget [dead]
+/targetenemy [noharm]
+/cast !Auto Shot
+/petattack
+/cast Hunter's Mark
+END
+VER 3 0000000000000001 "ZygorAction1" "134400"
+END

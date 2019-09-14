@@ -1,0 +1,10 @@
+## Interface: 11302
+## Title: YouGotMail
+## Notes: Simple addon for Classic WoW to play the familiar "You got mail" when you receive mail.
+## Author: Boodaah
+## Version: 1.0.0
+## SavedVariablesPerCharacter: YouGotMailDB
+## X-eMail: boodaah@me.com
+## X-License: Public Domain
+
+YouGotMail.lua

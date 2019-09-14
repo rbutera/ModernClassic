@@ -1,0 +1,6 @@
+## Interface: 11302
+## Version: 1.13.2.7
+## Title: Quafe LFC
+## Notes: Libraries for Classic
+
+Libraries\Libraries.xml

@@ -1,0 +1,8 @@
+## Interface: 11302
+## Author: Eliote
+## Title: Kui |cff9966ffNameplates: |cffffffffElite|r
+## Notes: Adds 'Elite' in KuiNameplates
+## Version: v1.0-classic
+## Dependencies: Kui_Nameplates
+
+Kui_Nameplates_Elite.lua

@@ -1,0 +1,14 @@
+## Interface: 11302
+## Title: TomCat's Tours for Classic
+## Author: TomCat
+## X-Website: https://www.tomcatstours.com
+## Version: 0.0.2
+## DefaultState: enabled
+## SavedVariablesPerCharacter: TomCats_Classic_Character
+## SavedVariables: TomCats_Classic_Account
+## OptionalDeps: Paste
+## X-Part-Of: TomCat's Tours:
+## X-Category: Achievements, Map, Miscellaneous
+## X-Localizations: enUS, deDE, esES, esMX, frFR, itIT, koKR, ptBR, ruRU, zhCN, zhTW
+
+Main.xml

@@ -1,0 +1,210 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+	<!--<Script file="Utf8\utf8.lua"/>-->
+
+	<!--Party-->
+	<Button name="Quafe_PartyFrameTemplate" inherits="SecureUnitButtonTemplate" enableMouse="true" virtual="true">
+		<Size x="104" y="60" />
+		<Frames>
+			<PlayerModel parentKey="Portrait">
+				<Size x="100" y="26" />
+				<Anchors>
+					<Anchor point="TOP" x="0" y="-2" />
+				</Anchors>
+			</PlayerModel>
+			<!--<StatusBar parentKey="HealthBar" minValue="0" maxValue="100" defaultValue="75">
+				<Size x="100" y="10" />
+				<Anchors>
+					<Anchor point="BOTTOM" x="0" y="2" />
+				</Anchors>
+				<BarTexture parentKey="BarTex" file="Interface\AddOns\Quafe\Media\Party\HealthBar">
+					<TexCoords left="0.1094" right="0.8906" top="0.1875" bottom="0.8125" />
+				</BarTexture>
+			</StatusBar>-->
+			<Frame parentKey="ArtFrame" setAllPoints="true">
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture parentKey="Bg" file="Interface\AddOns\Quafe\Media\StatusBar\Raid">
+							<Size x="104" y="60"/>
+							<Anchors>
+								<Anchor point="CENTER" x="0" y="0" />
+							</Anchors>
+							<Color r="0.02" g="0.02" b="0.02" a="0.6" />
+						</Texture>
+						<Texture parentKey="Bg_Glow" file="Interface\AddOns\Quafe\Media\StatusBar\Raid">
+							<Size x="104" y="60"/>
+							<Anchors>
+								<Anchor point="CENTER" x="0" y="0" />
+							</Anchors>
+							<Color r="0.02" g="0.02" b="0.02" a="0.1" />
+						</Texture>
+					</Layer>
+					<Layer level="BORDER">
+						<Texture parentKey="HealthBarBg" file="Interface\AddOns\Quafe\Media\Party\HealthBar">
+							<Size x="100" y="10" />
+							<TexCoords left="0.1094" right="0.8906" top="0.1875" bottom="0.8125" />
+							<Anchors>
+								<Anchor point="BOTTOM" x="0" y="2" />
+							</Anchors>
+						</Texture>
+					</Layer>
+					<Layer level="ARTWORK">
+						<FontString parentKey="Name">
+							<Size x="104" y="10" />
+							<Anchors>
+								<Anchor point="TOP" x="0" y="-34" />
+							</Anchors>
+						</FontString>
+						<Texture parentKey="HealthBar" file="Interface\AddOns\Quafe\Media\Party\HealthBar" />
+					</Layer>
+					<Layer level="OVERLAY">
+						<FontString parentKey="Percent">
+							<!--<Size x="40" y="20" />-->
+							<Anchors>
+								<Anchor point="BOTTOMLEFT" x="4" y="34" />
+							</Anchors>
+							<Shadow>
+								<Offset x="1" y="-1" />
+							</Shadow>
+						</FontString>
+					</Layer>
+				</Layers>
+			</Frame> 
+		</Frames>
+		<Scripts>
+			<OnLoad function="PartyButton_OnLoad" />
+			<OnShow function="PartyButton_OnShow" />	
+			<OnEvent function="PartyButton_OnEvent" />
+		</Scripts>
+	</Button>
+
+	<!--Raid-->
+	<Frame name = "Quafe_RaidIndicatorTemplate"  hidden="true" virtual="true">
+		<Frames>
+			<Frame parentKey="Indicator1">
+			</Frame>
+			<Frame parentKey="Indicator2">
+			</Frame>
+			<Frame parentKey="Indicator3">
+			</Frame>
+			<Frame parentKey="Indicator4">
+			</Frame>
+			<Frame parentKey="Indicator5">
+			</Frame>
+			<Frame parentKey="Indicator6">
+			</Frame>
+			<Frame parentKey="Indicator6">
+			</Frame>
+		</Frames>
+	</Frame>
+
+	<Button name="Quafe_Raid5FrameTemplate" inherits="SecureUnitButtonTemplate" enableMouse="true" virtual="true">
+		<Size x="100" y="50" />
+		<Frames>
+			<StatusBar parentKey="Bar1" minValue="0" maxValue="100" defaultValue="0">
+				<Size x="100" y="4" />
+				<BarTexture parentKey="BarTex" file="Interface\AddOns\Quafe\Media\StatusBar\Raid" />
+				<Anchors>
+					<Anchor point="CENTER" x="0" y="0" />
+				</Anchors>
+			</StatusBar>
+			<StatusBar parentKey="Bar2" minValue="0" maxValue="100" defaultValue="0" alpha="0.9">
+				<Size x="100" y="20" />
+				<BarTexture parentKey="BarTex" file="Interface\AddOns\Quafe\Media\StatusBar\Raid" />
+				<Anchors>
+					<Anchor point="TOPLEFT" x="0" y="0" />
+				</Anchors>
+			</StatusBar>
+			<StatusBar parentKey="Bar3" minValue="0" maxValue="100" defaultValue="0" alpha="0.9">
+				<Size x="100" y="20" />
+				<BarTexture parentKey="BarTex" file="Interface\AddOns\Quafe\Media\StatusBar\Raid" />
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" x="0" y="0" />
+				</Anchors>
+			</StatusBar>
+			<Frame parentKey="ArtFrame" setAllPoints="true">
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture parentKey="Bg" file="Interface\AddOns\Quafe\Media\StatusBar\Raid">
+							<Size x="100" y="50"/>
+							<Anchors>
+								<Anchor point="CENTER" x="0" y="0" />
+							</Anchors>
+							<Color r="0.02" g="0.02" b="0.02" a="1" />
+						</Texture>
+						<Texture parentKey="Bg_Glow" file="Interface\AddOns\Quafe\Media\StatusBar\Raid">
+							<Size x="100" y="50"/>
+							<Anchors>
+								<Anchor point="CENTER" x="0" y="0" />
+							</Anchors>
+							<Color r="0.02" g="0.02" b="0.02" a="0" />
+						</Texture>
+					</Layer>
+					<!--<Layer level="ARTWORK">
+						<Texture parentKey="HealthBar" file="Interface\AddOns\Quafe\Media\Party\HealthBar" alpha="0.9" />
+					</Layer>-->
+					<Layer level="OVERLAY">
+						<FontString parentKey="Name">
+							<Size x="100" y="10" />
+							<Anchors>
+								<Anchor point="CENTER" x="0" y="13" />
+							</Anchors>
+						</FontString>
+						<FontString parentKey="Text">
+							<Size x="100" y="10" />
+							<Anchors>
+								<Anchor point="CENTER" x="0" y="-13" />
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+			</Frame>
+		</Frames>
+		<Scripts>
+			<OnLoad function="QuafeRaid5Button_OnLoad" />
+			<OnShow function="PartyButton_OnShow" />
+			<OnEvent function="QuafeRaid5Button_OnEvent" />
+		</Scripts>
+	</Button>
+
+	<Button name="Quafe_Raid40FrameTemplate" inherits="SecureUnitButtonTemplate" enableMouse="true" virtual="true">
+		<Size x="104" y="60" />
+		<Frames>
+			<StatusBar parentKey="HealthBar" minValue="0" maxValue="100" defaultValue="75">
+				<Anchors>
+					<Anchor point="BOTTOM" x="0" y="2" />
+				</Anchors>
+				<BarTexture parentKey="BarTex" file="Interface\AddOns\Quafe\Media\Party\HealthBar">
+					<TexCoords left="0.1094" right="0.8906" top="0.1875" bottom="0.8125" />
+				</BarTexture>
+			</StatusBar>
+			<StatusBar parentKey="PowerBar" minValue="0" maxValue="100" defaultValue="75">
+				<Anchors>
+					<Anchor point="BOTTOM" x="0" y="2" />
+				</Anchors>
+			</StatusBar>
+			<Frame parentKey="ArtFrame" setAllPoints="true">
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture parentKey="Bg" file="Interface\AddOns\Quafe\Media\StatusBar\Raid">
+							<Size x="104" y="60"/>
+							<Anchors>
+								<Anchor point="CENTER" x="0" y="0" />
+							</Anchors>
+							<Color r="0.02" g="0.02" b="0.02" a="0.9" />
+						</Texture>
+						<Texture parentKey="Bg_Glow" file="Interface\AddOns\Quafe\Media\StatusBar\Raid">
+							<Size x="104" y="60"/>
+							<Anchors>
+								<Anchor point="CENTER" x="0" y="0" />
+							</Anchors>
+							<Color r="0.02" g="0.02" b="0.02" a="0.1" />
+						</Texture>
+					</Layer>
+					<Layer level="ARTWORK">
+
+					</Layer>
+				</Layers>
+			</Frame>
+		</Frames>
+	</Button>
+</Ui>

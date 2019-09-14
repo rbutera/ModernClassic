@@ -1,0 +1,41 @@
+
+LS_TOASTS_GLOBAL_CONFIG = {
+	["profileKeys"] = {
+		["Adhd - Dreadmist"] = "Default",
+		["Bankk - Dreadmist"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["version"] = 1130202,
+			["anchors"] = {
+				{
+					["point"] = {
+						["rP"] = "TOPRIGHT",
+						["p"] = "TOPRIGHT",
+						["x"] = -391,
+						["y"] = -397,
+					},
+				}, -- [1]
+			},
+			["types"] = {
+				["loot_gold"] = {
+					["enabled"] = true,
+					["dnd"] = false,
+					["sfx"] = true,
+					["anchor"] = 1,
+					["track_loss"] = false,
+					["threshold"] = 1,
+				},
+				["loot_items"] = {
+					["enabled"] = true,
+					["dnd"] = false,
+					["sfx"] = true,
+					["anchor"] = 1,
+					["ilvl"] = true,
+					["quest"] = false,
+					["threshold"] = 1,
+				},
+			},
+		},
+	},
+}

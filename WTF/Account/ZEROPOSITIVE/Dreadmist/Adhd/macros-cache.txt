@@ -1,0 +1,55 @@
+VER 3 0000000001000007 "AllinOne" "INV_MISC_QUESTIONMARK"
+#showtooltip Call Pet
+/cast [nomod, nopet] Call Pet
+/cast [mod:shift, @pet, dead] Revive Pet; [mod:shift, nochanneling] Mend Pet
+/petpassive [nomod]
+/petfollow [nomod]
+END
+VER 3 000000000100000A "ArS" "INV_MISC_QUESTIONMARK"
+#showtooltip Arcane Shot
+/cast !Auto Shot
+/cast Arcane Shot
+/cleartarget [dead]
+/targetenemy [noharm]
+END
+VER 3 0000000001000001 "AS" "INV_MISC_QUESTIONMARK"
+#showtooltip Auto Shot
+/cleartarget [dead]
+/targetenemy [noharm]
+/cast !Auto Shot
+END
+VER 3 0000000001000008 "Aspect" "INV_MISC_QUESTIONMARK"
+/castsequence !Aspect of the Hawk, !Aspect of the Cheetah
+END
+VER 3 0000000001000006 "Attack" "INV_MISC_QUESTIONMARK"
+/petattack
+/cast Charge
+/cast Dash
+/cast Dive
+END
+VER 3 0000000001000004 "Clip" "INV_MISC_QUESTIONMARK"
+#showtooltip Wing Clip
+/cast Wing Clip
+/cast Wing Clip(Rank 2)
+/cast Wing Clip(Rank 1)
+END
+VER 3 0000000001000005 "Growl" "INV_MISC_QUESTIONMARK"
+/cast Growl
+END
+VER 3 0000000001000002 "Melee" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Raptor Strike
+/cast Counterattack
+/cast Mongoose Bite
+END
+VER 3 0000000001000009 "Passive" "132311"
+/petpassive
+END
+VER 3 0000000001000003 "Pet Attack" "132152"
+#showtooltip
+/cleartarget [dead][help]
+/petattack [harm]
+/cast Dash
+/cast Dive
+END

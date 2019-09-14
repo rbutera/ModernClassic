@@ -1,0 +1,19 @@
+------------------------------------------------------------------------
+r469 | nevcairiel | 2019-08-11 08:26:04 +0000 (Sun, 11 Aug 2019) | 1 line
+Changed paths:
+   M /trunk/ArchaeologyData.lua
+   M /trunk/FishData.lua
+   M /trunk/HerbalismData.lua
+   M /trunk/MiningData.lua
+   M /trunk/TreasureData.lua
+
+Import 8.2 data
+------------------------------------------------------------------------
+r468 | nevcairiel | 2019-08-11 08:23:02 +0000 (Sun, 11 Aug 2019) | 1 line
+Changed paths:
+   M /trunk/GatherMate2_Data.toc
+   M /trunk/GatherMateData.lua
+
+Update TOC and add new 8.2 BfA zones
+------------------------------------------------------------------------
+

@@ -1,0 +1,8 @@
+<Ui>
+	<!--<Script file="Utf8\utf8.lua"/>-->
+
+	<Include file="Template.xml"/>
+	<Script file="Init.lua"/>
+	<Script file="InitConfig.lua"/>
+	<Script file="InitFunction.lua"/>
+</Ui>

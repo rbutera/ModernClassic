@@ -1,0 +1,58 @@
+tag 20a79f678c15fc639a4d185a8937d605253c2db6 0.04
+Author:	Azilroka <darktemplar9900@yahoo.com>
+Date:	Tue Aug 27 09:10:35 2019 -0500
+
+commit 05b50684bc5d5d974e0798026db1d520d5ef25bd
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Tue Aug 27 09:10:05 2019 -0500
+
+    0.04
+
+commit ac77192c020e09f26b913795fe721be71f92d437
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Tue Aug 27 09:08:46 2019 -0500
+
+    Update Core / Remove WA / Pull Ace3 from Ace3 repo
+
+commit 13978348d8493c993994352362b92883e05958b7
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Fri Aug 9 23:08:40 2019 -0500
+
+    Update Ace3
+
+commit e276322b1ae586cd5aa35f2a9d402f985b2d32c6
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Fri Jul 5 23:43:50 2019 -0500
+
+    Added submodule Libs/Ace3
+
+commit e45803e4cd0ace0673f6d3cf29aba6eba5e45636
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Fri Jul 5 23:41:42 2019 -0500
+
+    Removed submodule Libs/Ace3
+
+commit 13f9e94f7ef698053d0037dbc96bb979ccafa08c
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Fri Jul 5 23:14:01 2019 -0500
+
+    Remove
+
+commit b05143e63ffbb3b2cbdfb9a167e563fdf03a6635
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Fri Jul 5 23:11:29 2019 -0500
+
+    Update Submodules
+
+commit d9496adc6ac4c3618f2494b2b898845137194185
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Fri Jul 5 23:08:04 2019 -0500
+
+    remove submodules
+
+commit 34b87cf607291c6e34fc9687ef923827fe6cc144
+Author: Azilroka <darktemplar9900@yahoo.com>
+Date:   Fri Jul 5 22:52:11 2019 -0500
+
+    Remove this
+

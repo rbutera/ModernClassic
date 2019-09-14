@@ -1,0 +1,10 @@
+## Interface: 11302
+## Version: 1.13.2.7
+## Author: Voidiver
+## Title: Quafe |cff96fef0MEKA|r
+## Notes: Quafe_MEKA
+## Notes-zhCN: Quafe_MEKA
+
+## RequiredDeps: Quafe
+
+Quafe_MEKA_Classic.xml

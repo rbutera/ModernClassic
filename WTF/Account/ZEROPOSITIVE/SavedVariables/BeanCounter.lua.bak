@@ -1,0 +1,141 @@
+
+BeanCounterDB = {
+	["Dreadmist"] = {
+		["Bankk"] = {
+			["vendorsell"] = {
+			},
+			["postedBids"] = {
+			},
+			["postedAuctions"] = {
+				["2840"] = {
+					["item:2840::::::::100:::::::"] = {
+					},
+				},
+			},
+			["completedBidsBuyoutsNeutral"] = {
+			},
+			["vendorbuy"] = {
+			},
+			["failedAuctions"] = {
+			},
+			["failedBidsNeutral"] = {
+			},
+			["failedBids"] = {
+			},
+			["completedAuctions"] = {
+				["2840"] = {
+					["item:2840::::::::100:::::::"] = {
+						"20;1649;120;80;1609;3;Shadowscream;1567920949;;H", -- [1]
+						"20;1649;120;80;1609;3;Shadowscream;1567920946;;H", -- [2]
+						"4;330;24;16;322;1;Reigah;1567922690;;H", -- [3]
+					},
+				},
+			},
+			["failedAuctionsNeutral"] = {
+			},
+			["completedAuctionsNeutral"] = {
+			},
+			["completedBidsBuyouts"] = {
+			},
+		},
+		["Adhd"] = {
+			["vendorsell"] = {
+			},
+			["postedBids"] = {
+				["3036"] = {
+					["item:3036::::::::100:::::::"] = {
+					},
+				},
+			},
+			["postedAuctions"] = {
+			},
+			["completedBidsBuyoutsNeutral"] = {
+			},
+			["vendorbuy"] = {
+			},
+			["failedAuctions"] = {
+			},
+			["failedBidsNeutral"] = {
+			},
+			["failedBids"] = {
+			},
+			["completedAuctions"] = {
+			},
+			["failedAuctionsNeutral"] = {
+			},
+			["completedAuctionsNeutral"] = {
+			},
+			["completedBidsBuyouts"] = {
+				["3036"] = {
+					["item:3036::::::::100:::::::"] = {
+						"1;;;;1195;1195;Doopz;1567773479;;H", -- [1]
+					},
+				},
+			},
+		},
+	},
+}
+BeanCounterDBSettings = {
+	["configator.left"] = 559.625183105469,
+	["Dreadmist"] = {
+		["Bankk"] = {
+			["tasks.sortArray"] = 1567942728,
+			["version"] = 3.04,
+			["faction"] = "Horde",
+			["tasks.compactDB"] = 1567942728,
+			["wealth"] = 8941,
+			["tasks.prunePostedDB"] = 1567942728,
+			["mailbox"] = {
+				{
+					["subject"] = "Auction successful: Copper Bar (4)",
+					["read"] = 1,
+					["time"] = 28.4305438995361,
+					["sender"] = "Horde Auction House",
+				}, -- [1]
+				{
+					["subject"] = "Auction successful: Copper Bar (20)",
+					["read"] = 1,
+					["time"] = 28.4103927612305,
+					["sender"] = "Horde Auction House",
+				}, -- [2]
+				{
+					["subject"] = "Auction successful: Copper Bar (20)",
+					["read"] = 1,
+					["time"] = 28.4103584289551,
+					["sender"] = "Horde Auction House",
+				}, -- [3]
+			},
+		},
+		["Adhd"] = {
+			["tasks.sortArray"] = 1568171382,
+			["version"] = 3.04,
+			["faction"] = "Horde",
+			["tasks.compactDB"] = 1568171382,
+			["wealth"] = 19668,
+			["tasks.prunePostedDB"] = 1568171382,
+			["mailbox"] = {
+				{
+					["subject"] = "Auction won: Heavy Shortbow",
+					["read"] = 1,
+					["time"] = 29.9992599487305,
+					["sender"] = "Horde Auction House",
+				}, -- [1]
+			},
+		},
+	},
+	["configator.top"] = 764.789123535156,
+	["util.beancounter.ButtonuseDateCheck"] = false,
+}
+BeanCounterDBNames = {
+	["3036:"] = "cff1eff00;Heavy Shortbow",
+	["2840:"] = "cffffffff;Copper Bar",
+}
+BeanCounterAccountDB = {
+	{
+		["count"] = 4,
+		["link"] = "|cffffffff|Hitem:2840::::::::1:::::::|h[Copper Bar]|h|r",
+	}, -- [1]
+}
+BeanCounterMailPatch = {
+	"Horde Auction House", -- [1]
+}

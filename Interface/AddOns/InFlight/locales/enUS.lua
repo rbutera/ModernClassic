@@ -1,0 +1,36 @@
+local L = LibStub("AceLocale-3.0"):NewLocale("InFlight", "enUS", true)
+if not L then return end
+
+L["BackgroundColor"] = "Background Color"
+L["BarColor"] = "Bar Color"
+L["BarOptions"] = "Bar Options"
+L["Border"] = true
+L["BorderColor"] = "Border Color"
+L["CompactMode"] = "Compact Mode"
+L["ConfirmFlight"] = "Confirm Flight"
+L["ConfirmPopup"] = "Take flight to %s?"
+L["DefaultsUpdated"] = "Default data updated."
+L["DestParse"] = ", (.+)"
+L["Duration"] = "Duration: "
+L["FillUp"] = "Fill Up"
+L["FlightTimeAdded"] = "flight time added:"
+L["FlightTimeContribute"] = "%s flight times available to contribute."
+L["FlightTimeUpdated"] = "flight time updated:"
+L["Font"] = true
+L["FontColor"] = "Font Color"
+L["Height"] = true
+L["OutlineInfo"] = "Outline Info"
+L["OutlineTime"] = "Outline Time"
+L["PerCharOptions"] = "Character Specific Options"
+L["ResetFlightTimes"] = "Reset Flight Times"
+L["ResetOptions"] = "Reset Options"
+L["ShowChat"] = "Chat Messages"
+L["ShowSpark"] = "Show Spark"
+L["TextOptions"] = "Text Options"
+L["Texture"] = true
+L["TooltipOption2"] = "<Shift Left-Click> to move"
+L["TooltipOption3"] = "<Right-Click> for Options"
+L["TooltipOption4"] = "<Ctrl Left-Click> to force close"
+L["ToText"] = "\"To\" Text"
+L["UnknownColor"] = "Unknown Color"
+L["Width"] = true

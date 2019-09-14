@@ -1,0 +1,1 @@
+MinimapToggleButton:Hide()

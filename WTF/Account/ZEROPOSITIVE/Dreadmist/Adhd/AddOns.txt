@@ -1,0 +1,8 @@
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
+AddOnSkins: disabled
+Aurora: disabled
+MikScrollingBattleText: disabled
+LibSharedMedia-3.0: enabled
+MSBTOptions: disabled

@@ -1,0 +1,259 @@
+<Ui>
+	<Frame name = "MEKA_GarrisonNotificationTemplate"  hidden="true" virtual="true">
+		<Animations>
+			<AnimationGroup parentKey="Pulse" setToFinalAlpha="true" looping="REPEAT">
+				<Alpha duration="0" order="0" fromAlpha="0" toAlpha="0" />
+				<Alpha smoothing="IN" duration="0.75" order="1" fromAlpha="0" toAlpha="1" />
+				<Alpha smoothing="OUT" duration="0.75" order="2" fromAlpha="1" toAlpha="0" />
+			</AnimationGroup>
+		</Animations>
+		<Scripts>
+			<OnShow>
+				self.Pulse:Play()
+			</OnShow>
+			<OnHide>
+				self.Pulse:Stop()
+			</OnHide>
+		</Scripts>
+	</Frame>
+
+	<Frame name = "MEKA_WarnFlashTemplate" hidden="true" virtual = "true">
+		<Animations>
+			<AnimationGroup parentKey="Warn" setToFinalAlpha="true" looping="REPEAT">
+				<Alpha duration="0" order="0" fromAlpha="0" toAlpha="0" />
+				<Alpha smoothing="IN" duration="0.2" order="1" fromAlpha="0" toAlpha="1" />
+				<Alpha duration="0.2" order="2" fromAlpha="1" toAlpha="1" />
+				<Alpha smoothing="OUT" duration="0.2" order="3" fromAlpha="1" toAlpha="0" />
+			</AnimationGroup>
+		</Animations>
+		<Scripts>
+			<OnShow>
+				self.Pulse:Play()
+			</OnShow>
+			<OnHide>
+				self.Pulse:Stop()
+			</OnHide>
+		</Scripts>
+	</Frame>
+
+	<Frame name = "MEKA_HUD_SlideTemplate" hidden="false" virtual = "true">
+		<Animations>
+			<AnimationGroup parentKey="SlideIn" setToFinalAlpha="true" looping="NONE">
+				<Alpha order="1" duration="0" fromAlpha="0" toAlpha="0" />
+				<Translation order="1" childKey="Left.Bar1" duration="0" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar2" duration="0" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar3" duration="0" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Block" duration="0" offsetX="-40" offsetY="0" />
+				<Translation order="1" childKey="Left.Border1" duration="0" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Left.Border2" duration="0" offsetX="-30" offsetY="0" />
+
+				<Translation order="1" childKey="Right.Bar1" duration="0" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Bar2" duration="0" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Bar3" duration="0" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Block" duration="0" offsetX="40" offsetY="0" />
+				<Translation order="1" childKey="Right.Border1" duration="0" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Right.Border2" duration="0" offsetX="30" offsetY="0" />
+
+				<Alpha order="2" smoothing="OUT" duration="0.25" fromAlpha="0" toAlpha="1" />
+				<Translation order="2" childKey="Left.Bar1" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="2" childKey="Left.Bar2" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="2" childKey="Left.Bar3" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="2" childKey="Left.Block" smoothing="IN" duration="0.25" offsetX="40" offsetY="0" />
+				<Translation order="2" childKey="Left.Border1" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="2" childKey="Left.Border2" smoothing="IN" duration="0.25" offsetX="30" offsetY="0" />
+
+				<Translation order="2" childKey="Right.Bar1" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="2" childKey="Right.Bar2" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="2" childKey="Right.Bar3" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="2" childKey="Right.Block" smoothing="IN" duration="0.25" offsetX="-40" offsetY="0" />
+				<Translation order="2" childKey="Right.Border1" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="2" childKey="Right.Border2" smoothing="IN" duration="0.25" offsetX="-30" offsetY="0" />
+				<Scripts>
+					<OnPlay>
+						self:GetParent().SlideOut:Stop()
+						self:GetParent().State = "Show"
+						self:GetParent():SetAlpha(1)
+					</OnPlay>
+					<OnStop>
+						self:GetParent(): SetAlpha(1)
+						--self:GetParent(): Show()
+					</OnStop>
+					<OnFinished>
+						self:GetParent(): SetAlpha(1)
+						--self:GetParent(): Show()
+					</OnFinished>
+				</Scripts>
+			</AnimationGroup>
+			<AnimationGroup parentKey="SlideOut" setToFinalAlpha="true" looping="NONE">
+				<Alpha order="1" smoothing="OUT" duration="0.25" fromAlpha="1" toAlpha="0" />
+				<Translation order="1" childKey="Left.Bar1" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar2" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar3" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Block" smoothing="IN" duration="0.25" offsetX="-40" offsetY="0" />
+				<Translation order="1" childKey="Left.Border1" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Left.Border2" smoothing="IN" duration="0.25" offsetX="-30" offsetY="0" />
+
+				<Translation order="1" childKey="Right.Bar1" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Bar2" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Bar3" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Block" smoothing="IN" duration="0.25" offsetX="40" offsetY="0" />
+				<Translation order="1" childKey="Right.Border1" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Right.Border2" smoothing="IN" duration="0.25" offsetX="30" offsetY="0" />
+				<Scripts>
+					<OnPlay>
+						self:GetParent().SlideIn: Stop()
+						self:GetParent().State = "Hide"
+						self:GetParent(): SetAlpha(1)
+						--self:GetParent(): Show()
+					</OnPlay>
+					<OnFinished>
+						--self:GetParent(): Hide()
+						self:GetParent(): SetAlpha(0)
+					</OnFinished>
+				</Scripts>
+			</AnimationGroup>
+		</Animations>
+	</Frame>
+
+	<Frame name = "MEKA_LoopHUD_SlideTemplate" hidden="true" virtual = "true">
+		<Animations>
+			<AnimationGroup parentKey="SlideIn" setToFinalAlpha="true" looping="NONE">
+				<Alpha order="1" duration="0" fromAlpha="0" toAlpha="0" />
+				<Translation order="1" childKey="Left.Border1" duration="0" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Border2" duration="0" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar1" duration="0" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar2" duration="0" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar3" duration="0" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar4" duration="0" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar5" duration="0" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Num48" duration="0" offsetX="-20" offsetY="0" />
+
+				<Translation order="1" childKey="Right.Border1" duration="0" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Border2" duration="0" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Right.Bar1" duration="0" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Bar3" duration="0" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Bar4" duration="0" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Bar5" duration="0" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Num48" duration="0" offsetX="20" offsetY="0" />
+
+				<Alpha order="2" smoothing="OUT" duration="0.25" fromAlpha="0" toAlpha="1" />
+				<Translation order="2" childKey="Left.Bar1" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="2" childKey="Left.Bar2" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="2" childKey="Left.Bar3" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="2" childKey="Left.Bar4" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="2" childKey="Left.Bar5" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="2" childKey="Left.Num48" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="2" childKey="Left.Border1" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="2" childKey="Left.Border2" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+
+				<Translation order="2" childKey="Right.Bar1" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="2" childKey="Right.Bar3" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="2" childKey="Right.Bar4" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="2" childKey="Right.Bar5" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="2" childKey="Right.Num48" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="2" childKey="Right.Border1" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="2" childKey="Right.Border2" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Scripts>
+					<OnPlay>
+						self:GetParent().SlideOut:Stop()
+						self:GetParent().State = "Show"
+						self:GetParent():Show()
+					</OnPlay>
+					<OnStop>
+						self:GetParent(): SetAlpha(1)
+						self:GetParent(): Show()
+					</OnStop>
+					<OnFinished>
+						self:GetParent(): SetAlpha(1)
+						self:GetParent(): Show()
+					</OnFinished>
+				</Scripts>
+			</AnimationGroup>
+			<AnimationGroup parentKey="SlideOut" setToFinalAlpha="true" looping="NONE">
+				<Alpha order="1" smoothing="OUT" duration="0.25" fromAlpha="1" toAlpha="0" />
+				<Translation order="1" childKey="Left.Bar1" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar2" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar3" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar4" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Bar5" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Num48" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Border1" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Translation order="1" childKey="Left.Border2" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+
+				<Translation order="1" childKey="Right.Bar1" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Bar3" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Bar4" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Bar5" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Num48" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Border1" smoothing="IN" duration="0.25" offsetX="20" offsetY="0" />
+				<Translation order="1" childKey="Right.Border2" smoothing="IN" duration="0.25" offsetX="-20" offsetY="0" />
+				<Scripts>
+					<OnPlay>
+						self:GetParent().SlideIn: Stop()
+						self:GetParent().State = "Hide"
+						self:GetParent(): SetAlpha(1)
+						self:GetParent(): Show()
+					</OnPlay>
+					<OnFinished>
+						self:GetParent(): Hide()
+						self:GetParent(): SetAlpha(1)
+					</OnFinished>
+				</Scripts>
+			</AnimationGroup>
+		</Animations>
+	</Frame>
+
+	<Frame name = "MEKA_LoopHUD_AuraSlideTemplate" virtual = "true">
+		<Animations>
+			<AnimationGroup parentKey="SlideUp" setToFinalAlpha="true" looping="NONE">
+				<Translation order="1" smoothing="OUT" duration="0.25" offsetX="0" offsetY="38" />
+				<Scripts>
+					<OnPlay>
+						self:GetParent().SlideDown:Stop()
+					</OnPlay>
+					<OnStop>
+						
+					</OnStop>
+					<OnFinished>
+						local a = self:GetParent()
+						local u = a:GetParent()
+						if a.unit == "target" then
+							a: SetPoint("BOTTOM", u, "TOP", 4,2+38)
+						elseif a.unit == "focus" then
+							a: SetPoint("BOTTOM", u, "TOP", -4,2+38)
+						end
+					</OnFinished>
+				</Scripts>
+			</AnimationGroup>
+			<AnimationGroup parentKey="SlideDown" setToFinalAlpha="true" looping="NONE">
+				<Translation order="1" smoothing="IN" duration="0.25" offsetX="0" offsetY="-38" />
+				<Scripts>
+					<OnPlay>
+						self:GetParent().SlideUp: Stop()
+					</OnPlay>
+					<OnFinished>
+						local a = self:GetParent()
+						local u = a:GetParent()
+						if a.unit == "target" then
+							a: SetPoint("BOTTOM", u, "TOP", 4,2)
+						elseif a.unit == "focus" then
+							a: SetPoint("BOTTOM", u, "TOP", -4,2)
+						end
+					</OnFinished>
+				</Scripts>
+			</AnimationGroup>
+		</Animations>
+	</Frame>
+
+	<Frame name = "MEKA_FCS_IconWarn_Template" virtual = "true">
+		<Animations>
+			<AnimationGroup parentKey="Flash" setToFinalAlpha="true" looping="NONE">
+				<Alpha order="1" childKey="Gloss" duration="0" fromAlpha="0" toAlpha="0" />
+				<Alpha order="2" childKey="Gloss" duration="0.2" fromAlpha="0" toAlpha="1" />
+				<Alpha order="3" childKey="Gloss" duration="0.1" fromAlpha="1" toAlpha="0.5" />
+				<Alpha order="4" childKey="Gloss" duration="0.1" fromAlpha="0.5" toAlpha="1" />
+				<Alpha order="5" childKey="Gloss" duration="0.2" fromAlpha="1" toAlpha="0" />
+			</AnimationGroup>
+		</Animations>
+	</Frame>
+</Ui>

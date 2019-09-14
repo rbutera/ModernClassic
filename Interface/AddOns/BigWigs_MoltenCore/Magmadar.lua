@@ -1,0 +1,56 @@
+
+--------------------------------------------------------------------------------
+-- Module declaration
+--
+
+local mod, CL = BigWigs:NewBoss("Magmadar", 409)
+if not mod then return end
+mod:RegisterEnableMob(11982)
+
+--------------------------------------------------------------------------------
+-- Initialization
+--
+
+function mod:GetOptions()
+	return {
+		19408, -- Panic
+		19451, -- Enrage
+		19428, -- Conflagration
+	}
+end
+
+function mod:OnBossEnable()
+	self:RegisterEvent("INSTANCE_ENCOUNTER_ENGAGE_UNIT", "CheckBossStatus")
+
+	self:Log("SPELL_CAST_SUCCESS", "Panic", self:SpellName(19408))
+	self:Log("SPELL_CAST_SUCCESS", "Enrage", self:SpellName(19451))
+	self:Log("SPELL_AURA_APPLIED", "Conflagration", self:SpellName(19428))
+
+	self:Death("Win", 11982)
+end
+
+function mod:OnEngage()
+	self:Bar(19451, 8.5) -- Enrage
+	self:Bar(19408, 9.7) -- Panic
+end
+
+--------------------------------------------------------------------------------
+-- Event Handlers
+--
+
+function mod:Panic(args)
+	self:CDBar(19408, 31) -- 31-38
+	self:Message(19408, "green")
+end
+
+function mod:Enrage(args)
+	self:Bar(19451, 8, CL.cast:format(args.spellName))
+	self:Message(19451, "yellow", "Info")
+end
+
+function mod:Conflagration(args)
+	if self:Me(args.destGUID) then
+		self:Message(19428, "blue", "Alert", CL.underyou:format(args.spellName))
+	end
+end
+
